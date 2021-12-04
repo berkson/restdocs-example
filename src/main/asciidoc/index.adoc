@@ -1,0 +1,14 @@
+= SFG Brewery Order Service Docs
+Berkson Ximenes
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+Sample application demonstrating how to use Spring Rest Docs
+
+BeerOrderControllerTest makes a call to a very simple service and produces
+three documentation snippets.
+
+Making Request using cURL.
+
+include::{snippets}/orders/curl-request.adoc[]

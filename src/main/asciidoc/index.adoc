@@ -11,4 +11,4 @@ three documentation snippets.
 
 Making Request using cURL.
 
-include::{snippets}/orders/curl-request.adoc[]
+include::{snippets}/v1/beer/curl-request.adoc[]

@@ -21,6 +21,7 @@
         <lombok-mapstruct-binding.version>0.2.0</lombok-mapstruct-binding.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
         <jaxb-version>3.0.1</jaxb-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
         <dependency>

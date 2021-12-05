@@ -42,7 +42,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  * Time: 20:49
  * Atenção às importações estáticas!!!
  */
-@AutoConfigureRestDocs
+@AutoConfigureRestDocs(uriScheme = "https", uriHost = "centralamc.com.br", uriPort = 443)
 @WebMvcTest(BeerController.class)
 @ExtendWith(RestDocumentationExtension.class)
 @ComponentScan(basePackages = "com.example.sfgrestdocs.web.mappers")
@@ -83,7 +83,7 @@ class BeerControllerTest {
                                 fieldWithPath("beerName").description("Nome da cerveja"),
                                 fieldWithPath("beerStyle").description("Estilo da cerveja"),
                                 fieldWithPath("upc").description("UPC da cerveja"),
-                                fieldWithPath("price").description("ŕeço da cerveja"),
+                                fieldWithPath("price").description("preço da cerveja"),
                                 fieldWithPath("quantityOnHand").description("Qunatidade na mão")
                         )));
     }
@@ -108,7 +108,7 @@ class BeerControllerTest {
                                 fields.withPath("beerName").description("Nome da cerveja"),
                                 fields.withPath("beerStyle").description("Estilo da cerveja"),
                                 fields.withPath("upc").description("UPC da cerveja"),
-                                fields.withPath("price").description("ŕeço da cerveja"),
+                                fields.withPath("price").description("preço da cerveja"),
                                 fields.withPath("quantityOnHand").ignored()
                         )));
     }
